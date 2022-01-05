@@ -1,5 +1,7 @@
 <?php
 
+namespace Rejala\Banco\Modelo;
+
 class Pessoa
 {
 
@@ -19,9 +21,9 @@ class Pessoa
         return $this->nome;
     }
 
-    public function recuperaCpf():CPF
+    public function recuperaCpf(): string
     {
-        return $this->cpf;
+        return $this->cpf->recuperaNumero();
     }
 
     protected function validaNomeTitular(string $nomeTitular)

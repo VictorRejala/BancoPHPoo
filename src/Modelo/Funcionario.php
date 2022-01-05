@@ -1,5 +1,10 @@
 <?php
 
+namespace Rejala\Banco\Modelo;
+
+use Rejala\Banco\Modelo\Conta\Conta;
+
+
 class Funcionario extends Pessoa
 {
 

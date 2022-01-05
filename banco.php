@@ -1,10 +1,11 @@
 <?php
 
-require_once 'src/Conta.php';
-require_once 'src/Endereco.php';
-require_once 'src/Titular.php';
-require_once 'src/CPF.php';
+require_once 'autoload.php';
 
+use Rejala\Banco\Modelo\Endereco;
+use Rejala\Banco\Modelo\Conta\Titular;
+use Rejala\Banco\Modelo\CPF;
+use Rejala\Banco\Modelo\Conta\Conta;
 
 $endereco = new Endereco('Salvador', 'Barra', 'Rua da Barra', '50');
 $vinicius = new Titular(new CPF('123.456.789-10'), 'Vinicius Dias', $endereco);

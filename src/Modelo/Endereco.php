@@ -1,5 +1,7 @@
 <?php
 
+namespace Rejala\Banco\Modelo;
+
 class Endereco
 {
     private $cidade;

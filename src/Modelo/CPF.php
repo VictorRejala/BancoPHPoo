@@ -1,5 +1,7 @@
 <?php
 
+namespace Rejala\Banco\Modelo;
+
 class CPF
 {
     private $numero;
