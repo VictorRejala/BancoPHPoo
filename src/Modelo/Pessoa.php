@@ -4,10 +4,8 @@ namespace Rejala\Banco\Modelo;
 
 class Pessoa
 {
-
     protected $nome;
     protected $cpf;
-
 
     public function __construct(string $nome,CPF $cpf)
     {
@@ -26,7 +24,7 @@ class Pessoa
         return $this->cpf->recuperaNumero();
     }
 
-    protected function validaNomeTitular(string $nomeTitular)
+    final protected function validaNomeTitular(string $nomeTitular)
     {
         if (strlen($nomeTitular) < 5) {
             echo "Nome precisa ter pelo menos 5 caracteres";

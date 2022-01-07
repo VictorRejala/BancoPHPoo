@@ -2,8 +2,10 @@
 
 namespace Rejala\Banco\Modelo;
 
-class Endereco
+final class Endereco
 {
+    use AcessoPropriedades;
+
     private $cidade;
     private $bairro;
     private $rua;
@@ -18,6 +20,10 @@ class Endereco
         $this->numero = $numero;
     }
 
+    public function __toString(): string
+    {
+        return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
+    }
 
     public function recuperaCidade(): string
     {

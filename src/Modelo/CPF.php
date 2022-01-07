@@ -2,7 +2,7 @@
 
 namespace Rejala\Banco\Modelo;
 
-class CPF
+final class CPF
 {
     private $numero;
 
